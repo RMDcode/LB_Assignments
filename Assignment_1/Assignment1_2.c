@@ -22,18 +22,36 @@
 */
 #include<stdio.h>
 
+////////////////////////////////////////////////////////////////////////
+//
+//  Function Name:  Display
+//  Description:    It is used to print "marvellous" 5 times in loop.
+//  Input:          None
+//  Output:         None   
+//  Author:         Rohit Manoj Dhuri
+//  Date:           19/10/2024
+//
+////////////////////////////////////////////////////////////////////////
+
 void Display()
 {
-    int i = 0;
-    for( i = 1 ; i <= 5 ; i++ )
+    int iCnt = 0;                              //Local variable for initialize loop
+    for( iCnt = 1 ; iCnt <= 5 ; iCnt++ )
     {
         printf("Marvellous\n");
     }
 }
 
+////////////////////////////////////////////////////////////////////////
+//
+//  This application is used to perform "Marvellous" 5 times in loop 
+//
+////////////////////////////////////////////////////////////////////////
+
+
 int main()
 {
-    Display();
+    Display();                                //Function Call
 
     return 0;
 }

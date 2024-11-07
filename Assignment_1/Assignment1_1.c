@@ -26,28 +26,46 @@
 */
 #include<stdio.h>
 
+//////////////////////////////////////////////////////////////////////
+//
+//  Function Name:  Divide
+//  Description  :  It is used to perform divide of 2 int values
+//  Input        :  Int, Int
+//  Output       :  Int
+//  Author       :  Rohit Manoj Dhuri
+//  Date         :  19/10/2024
+//  
+//////////////////////////////////////////////////////////////////////
+
+
 float Divide(int iNo1, int iNo2)
 {
-    int iAns = 0;
+    int iAns = 0;                              // Local variable for result
 
     if(iNo2 == 0)
     {
         return -1;
     }
 
-    iAns = iNo1 / iNo2;
+    iAns = iNo1 / iNo2;                        // Business Logic
 
     return iAns;
 }
 
+//////////////////////////////////////////////////////////////////////
+//
+//  This application is used to perform divide of 2 numbers.
+//
+//////////////////////////////////////////////////////////////////////
+
 int main()
 {
-    int iValue1 = 15, iValue2 = 5;
-    int iRet = 0;
+    int iValue1 = 15, iValue2 = 5;              // Local variables for input
+    int iRet = 0;                               // Local variable for output
 
     iRet = Divide( iValue1 , iValue2 );
 
-    printf("Division is %d", iRet );
+    printf("Division is %d", iRet );            // Function call
 
     return 0;
 }

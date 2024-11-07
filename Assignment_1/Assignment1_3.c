@@ -15,21 +15,38 @@
 
 // Step 4 : Write the program.
 #include<stdio.h>
+//////////////////////////////////////////////////////////////////////
+//
+//  Function Name:  Display
+//  Description:    It is used to print 1 to 5 in reverse order.
+//  Input:          None (Function call)  
+//  Output:         Int
+//  Author:         Rohit Dhuri  
+//  Date:           19/10/2024
+//
+//////////////////////////////////////////////////////////////////////
 
 void Display()
 {
-    int iNo1 = 0;
-    int i = 5;
-    while( iNo1 < i )
+    int iNo1 = 0;                       // Local variable for initilize the loop
+    int iCnt = 5;                       // Local variable for range
+    while( iNo1 < iCnt )
     {
-        printf("%d",i);
-        i--;
+        printf("%d",iCnt);
+        iCnt--;
     }
 }
 
+//////////////////////////////////////////////////////////////////////
+//
+// This function performs the reverse the order.
+//
+//////////////////////////////////////////////////////////////////////
+
+
 int main()
 {
-    Display();
+    Display();                          // Function Call
 
     return 0;
 }

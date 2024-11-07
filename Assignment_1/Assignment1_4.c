@@ -22,9 +22,20 @@ typedef int BOOL;
 #define TRUE 1
 #define FALSE 0
 
+//////////////////////////////////////////////////////////////////////
+//
+//  Function Name:   Check 
+//  Description:    It is use to check whether int value is even or not
+//  Input:          Int  
+//  Output:         Boolean
+//  Author:         Rohit Manoj Dhuri  
+//  Date:           19/10/2024
+//
+//////////////////////////////////////////////////////////////////////
+
 int Check(int iNo)
 {
-    if((iNo % 5) == 0)
+    if((iNo % 5) == 0)                  //Bussiness Logic
     {
         return TRUE;
     }
@@ -33,16 +44,21 @@ int Check(int iNo)
         return FALSE;
     }
 }
+//////////////////////////////////////////////////////////////////////
+//
+//  This application use to perform check number is even or not 
+//
+//////////////////////////////////////////////////////////////////////
 
 int main()
 {
-    int iValue = 0;
-    BOOL bRet = FALSE;
+    int iValue = 0;                     // Local variable for input 
+    BOOL bRet = FALSE;                  // Local variable for output
 
     printf("Enter number\n");
     scanf("%d",&iValue);
 
-    bRet = Check(iValue);
+    bRet = Check(iValue);               // Function call
 
     if(bRet == TRUE)
     {
