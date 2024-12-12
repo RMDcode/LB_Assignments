@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-int ChkChar(char *str, char ch)
+bool ChkChar(char *str, char ch)
 {
     bool bFlag = false;
 
